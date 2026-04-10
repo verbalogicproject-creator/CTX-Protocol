@@ -13,6 +13,8 @@
 
 A `.ctx` file is a **structured architecture map** that encodes the nodes (components, modules, files), edges (dependencies, subscriptions), and groupings (directories, layers) of a software folder in a format optimized for LLM consumption.
 
+While conceptualized as an evolution of visual diagramming formats like **Mermaid**, `.ctx` is a categorical shift: it is a **machine-readable topology**, not a human-readable diagram.
+
 `.ctx` files are the machine-readable layer of a **lazy-loading context management system** where:
 - `start-here.md` routes readers (human or AI) to the right subfolder
 - `{folder}.md` provides detailed prose reference per component
@@ -764,5 +766,8 @@ Token savings come from:
 1. **Hook layer (fast gate):** A PreToolUse hook on file reads that compares the `last-verified` date against file modification timestamps. Fires on every read of a `.ctx` file, costs <5ms (using `jq` for JSON parsing).
 
 2. **Script layer (deep audit):** An on-demand script that parses the node definitions in `.ctx` files and compares against actual files on disk. Reports new/missing files and days since last verification.
+
+See the project's `scripts/check-doc-staleness.py` and `scripts/doc-staleness-hook.sh` for reference implementations.
+orts new/missing files and days since last verification.
 
 See the project's `scripts/check-doc-staleness.py` and `scripts/doc-staleness-hook.sh` for reference implementations.

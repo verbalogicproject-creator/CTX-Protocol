@@ -18,9 +18,9 @@ Current AI coding assistants (Claude, ChatGPT, Gemini) suffer from two major fla
 CTX Protocol is a **deterministic, machine-optimized documentation layer** that lives alongside your code. It decouples **"Documentation for Humans"** (Prose) from **"Context for AI"** (Topology).
 
 ### The Three Pillars
-*   **1. Token Arbitrage (.ctx format):** A custom, high-density architecture notation. It strips away the visual baggage of Mermaid or JSON to maximize "Architectural Signal." 
-*   **2. Deterministic Lazy Loading:** A hierarchical "routing" system that lets the AI "walk" your codebase on demand. It only loads the context it needs, when it needs it.
-*   **3. The Shadow Auditor:** A Git-enforced verification layer. If your code changes but your context doesn't, the commit is blocked. The "Map" is always the "Territory."
+*   **1. Semantic Precision (.ctx format):** A machine-optimized topology notation. While inspired by visual formats like Mermaid, `.ctx` strips away human-centric rendering baggage to provide a pure, high-density architectural signal for LLM reasoning.
+*   **2. Deterministic Lazy Loading:** A hierarchical "routing" system that lets the AI "walk" your codebase on demand. By loading context only at the relevant abstraction layer, it prevents context-window exhaustion and maintains focus.
+*   **3. The Shadow Auditor:** A Git-enforced verification layer. If your code changes but your context doesn't, the commit is blocked. This guarantees that the AI’s "Map" is always 100% faithful to the "Territory."
 
 ---
 
@@ -92,3 +92,4 @@ MIT - Created by Eyal Nof.
 ---
 
 **Star this repo to support AI-Native Development! ⭐**
+to support AI-Native Development! ⭐**
